@@ -1,6 +1,5 @@
 import requests as r
 import os
-#"id":"4499737748"
 id = '3762891297'
 current_path = os.getcwd()
 try: os.mkdir(current_path + "\\"+id+"\\")
