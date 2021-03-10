@@ -50,7 +50,7 @@ def downloadallimg(username,headers,cookies):
         if(check == False): break
 if __name__ == "__main__":
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'}
-    cookies={'ig_did':'C8BA62CD-E241-4A03-91FD-1C8B673D34FA','mid':'YEgxiQALAAFRj1I2obsNVXJmSPaD','ig_nrcb':'1','csrftoken':'QjZLwOu1TuBWsIFdWn2xxXMVFaP4cvQr','ds_user_id':'46244324767','sessionid':'46244324767:otqfgaqfcKhd2e:8','rur':'PRN'}
+    cookies={yourcookie}
     username = 'trang.zee18'
     downloadallimg(username,headers,cookies)
 
