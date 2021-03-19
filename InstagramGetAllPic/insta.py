@@ -93,8 +93,8 @@ def parsecookie(cookies):
         cookies[k] = v
     return cookies
 if __name__ == "__main__":
-    headers = {'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Mobile Safari/537.36',"accept": "*/*","accept": "*/*","accept-language": "en,vi;q=0.9,en-US;q=0.8","content-type": "application/x-www-form-urlencoded","sec-fetch-dest": "empty","sec-fetch-mode": "cors","sec-fetch-site": "same-origin","sec-gpc": "1","x-csrftoken": "LTnLQ32xkzpAWA11CVspGeuC4GAJHIbG","x-ig-app-id": "936619743392459","x-ig-www-claim": "hmac.AR3EW2rG4PIT7TdEQo5JEIZ0CyKghONMvjcHeM1yXhP7p9oS","x-instagram-ajax": "db4941e96d11","x-requested-with": "XMLHttpRequest"}
-    rawcookies = 'ig_did=57EA43E9-92C2-4E2A-8910-4519B94EFC96; mid=YFLNQwALAAHAlD6sFLKxpAWYPAS3; ig_nrcb=1; csrftoken=Mg67dMuXrspyGmdrrWPyTuzrmfSGtlaZ; ds_user_id=3423384139; sessionid=3423384139%3AR1mE2IpTwx9zaU%3A24; shbid=3750; shbts=1616039309.9263468; rur=PRN'
+    headers = {"accept": "*/*","accept-language": "en,vi-VN;q=0.9,vi;q=0.8,en-US;q=0.7","cache-control": "no-cache","content-type": "application/x-www-form-urlencoded","pragma": "no-cache","sec-fetch-dest": "empty","sec-fetch-mode": "cors","sec-fetch-site": "same-origin","x-csrftoken": "e1y1XNmzosqPLXb2JaIvGfHnunaGB3cZ","x-ig-app-id": "936619743392459","x-ig-www-claim": "hmac.AR3EW2rG4PIT7TdEQo5JEIZ0CyKghONMvjcHeM1yXhP7p8gZ","x-instagram-ajax": "29f3fe8919f8","x-requested-with": "XMLHttpRequest",}
+    rawcookies = 'ig_did=7D21B0BA-F0B0-421E-983D-AE7312EC8E38; mid=YFQQ7gALAAFOcsdyXHTKidcu_Vm2; ig_nrcb=1; csrftoken=e1y1XNmzosqPLXb2JaIvGfHnunaGB3cZ; ds_user_id=46244324767; sessionid=46244324767%3AZRT56N5aO4xphY%3A11; shbid=15795; shbts=1616122100.2754357; rur=ASH'
     cookies = parsecookie(rawcookies)
     username='you_r_love'
     getAllMedia(username)
