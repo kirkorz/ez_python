@@ -85,10 +85,17 @@ def downloadOne(link,id,s):
                 response = r.get(l)
                 file.write(response.content)
                 file.close()
-
+def parsecookie(cookies):
+    cookies = dict()
+    temp = rawcookies.split(';')
+    for i in temp:
+        k,v = i.split('=')
+        cookies[k] = v
+    return cookies
 if __name__ == "__main__":
-    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'}
-    cookies={'ig_did': 'C8BA62CD-E241-4A03-91FD-1C8B673D34FA', 'mid': 'YEgxiQALAAFRj1I2obsNVXJmSPaD', 'ig_nrcb': '1', 'csrftoken': 'GlJnDWSr6iM8bWE9AiAOjHVXInyX0DYi', 'ds_user_id': '46244324767', 'sessionid': '46244324767%3Av8AKIeWBU9Ygzv%3A10', 'rur': 'PRN'}
+    headers = {'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Mobile Safari/537.36',"accept": "*/*","accept": "*/*","accept-language": "en,vi;q=0.9,en-US;q=0.8","content-type": "application/x-www-form-urlencoded","sec-fetch-dest": "empty","sec-fetch-mode": "cors","sec-fetch-site": "same-origin","sec-gpc": "1","x-csrftoken": "LTnLQ32xkzpAWA11CVspGeuC4GAJHIbG","x-ig-app-id": "936619743392459","x-ig-www-claim": "hmac.AR3EW2rG4PIT7TdEQo5JEIZ0CyKghONMvjcHeM1yXhP7p9oS","x-instagram-ajax": "db4941e96d11","x-requested-with": "XMLHttpRequest"}
+    rawcookies = 'ig_did=57EA43E9-92C2-4E2A-8910-4519B94EFC96; mid=YFLNQwALAAHAlD6sFLKxpAWYPAS3; ig_nrcb=1; csrftoken=Mg67dMuXrspyGmdrrWPyTuzrmfSGtlaZ; ds_user_id=3423384139; sessionid=3423384139%3AR1mE2IpTwx9zaU%3A24; shbid=3750; shbts=1616039309.9263468; rur=PRN'
+    cookies = parsecookie(rawcookies)
     username='you_r_love'
     getAllMedia(username)
     
